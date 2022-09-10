@@ -3,8 +3,7 @@
 <game>
 	<title>Ayyylando</title>
 	<release-date>2023 (tbd)</release-date>
-	<website>https://radpepperhat.github.io/presskit/ayyylando</website>
-
+	
 	<platforms>
 		<platform>
 			<name>Steam</name>
@@ -14,23 +13,23 @@
 
 	<description>
 	Ayyylando is a chill building strategy game where you build happy little cities in the sky. Explore a variety of colorful islands, evolve your buildings to help you grow, and when solid ground is no longer cool enough for you - expand onto the cliff sides.
-	\n
+	\r\n
 	If you're looking for a simple, all building, no resource management style of experience, Ayyylando is here for you. Intuitive gameplay will have you creating sprawling island cities in no time, leaving you free to enjoy the relaxing atmosphere... or puzzle out how to get the sweetest combos; whatever floats your airboat.
-	\n
+	\r\n
 	As an Islanders-like, Ayyylando floats in with a twist or two:
-	\n
+	\r\n
 	⦁	Making buildings happy is an important part of gameplay - depending on the game mode, perhaps THE most important thing
-	\n
+	\r\n
 	⦁	Here in the skies, building space is scarce - which is why cliffsides are FREE REAL ESTATE
-	\n
+	\r\n
 	⦁	No rooftop is safe either.
-	\n
+	\r\n
 	⦁	Okay - perhaps the round ones. We haven't figured out how to build on those yet - we're working on it, okay?
 	</description>
 	
 	<history>
 	Ayyylando started out with an idea of "what if Islanders, but socialism" - meaning, rather than focusing on maximizing a single building - you'd need to balance your play to make as many buildings happy as possible. Add to that an ardent love of floating islands in vibrant colors and entirely too much thinking about limited building space and tetris - and you've got Ayyylando - a simple, whimsical game to enjoy for an evening here and there.
-	\n
+	\r\n
 	Initially a solo-dev project by Lisza, the team has since grown. Ayyylando will be the first release by RadPepperHat. 
 	</history>
 
@@ -48,20 +47,6 @@
 			<youtube>G1IbRujko-A</youtube>
 		</trailer>
 	</trailers>
-	
-	
-	<additionals>
-		<additional>
-			<title>Original Soundtrack</title>
-			<description>Available for free from</description>
-			<link>http://somemusicsite.com/thislink</link>
-		</additional>
-		<additional>
-			<title>Release Blog Post</title>
-			<description>The blog-post through which this game was released is available at</description>
-			<link>http://vlambeer.com/bloglink</link>
-		</additional>
-	</additionals>
 	
 	<credits>
 		<credit>

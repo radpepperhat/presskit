@@ -357,8 +357,8 @@ echo '						<li><a href="#links">'. tl('Additional Links') .'</a></li>
 				</div>
 				<div id="content" class="uk-width-medium-3-4">';
 
-if( file_exists($games_location.$game."/images/header.gif") ) {
-	echo '<img src="'.$games_location.$game.'/images/header.gif" class="header">';
+if( file_exists($games_location.$game."/images/header.png") ) {
+	echo '<img src="'.$games_location.$game.'/images/header.png" class="header">';
 }
 
 echo '					<div class="uk-grid">

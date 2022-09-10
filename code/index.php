@@ -246,8 +246,8 @@ echo '						<li><a href="#credits">'. tl('Team') .'</a></li>
 				</div>
 				<div id="content" class="uk-width-medium-3-4">';
 
-if( file_exists("images/header.gif") ) {
-	echo '<img src="images/header.gif" class="header">';
+if( file_exists("images/header.png") ) {
+	echo '<img src="images/header.png" class="header">';
 }
 
 echo '					<div class="uk-grid">
