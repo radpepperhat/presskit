@@ -3,7 +3,8 @@
 <game>
 	<title>Ayyylando</title>
 	<release-date>2023 (tbd)</release-date>
-	
+	<website>https://radpepperhat.github.io/presskit/ayyylando</website>
+
 	<platforms>
 		<platform>
 			<name>Steam</name>
