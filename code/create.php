@@ -10,8 +10,8 @@ $todo = array(
 			"text" => "Edit the _data.xml file that was created in the folder containing install.php &amp; update it with the correct information.",
 			"done" => False
 		),
-		"header.png" => array(
-			"text" => "Upload header.png (1200 pixels wide, up to 240 pixels high) to the images directory.",
+		"header.gif" => array(
+			"text" => "Upload header.gif (1200 pixels wide, up to 240 pixels high) to the images directory.",
 			"done" => False
 		),
 		"images" => array(
@@ -49,9 +49,9 @@ $navTitle = '';
 $header = '';
 $contentText = '';
 
-if( file_exists("images/header.png") )
+if( file_exists("images/header.gif") )
 {
-	$header = '<img src="images/header.png" class="header">';
+	$header = '<img src="images/header.gif" class="header">';
 }
 
 if( $state == 'upgrade' )
@@ -133,9 +133,9 @@ if( $state == 'upgrade' )
 			}
 		}
 
-		if( file_exists('images/header.png') )
+		if( file_exists('images/header.gif') )
 		{
-			$todo['required']['header.png']['done'] = True;
+			$todo['required']['header.gif']['done'] = True;
 		}
 
 		if( $files = glob("images/*.png") )
@@ -145,7 +145,7 @@ if( $state == 'upgrade' )
 				$found = 0;
 				foreach( $files as $file )
 				{
-					if( substr($file, -10) != "header.png" && substr($file, -8) != "logo.png" && substr($file, -8) != "icon.png" )
+					if( substr($file, -10) != "header.gif" && substr($file, -8) != "logo.png" && substr($file, -8) != "icon.png" )
 					{
 						$found++;	
 					}
@@ -207,7 +207,7 @@ if( $state == 'upgrade' )
 			}
 		}
 
-		if ( $todo['required']['data.xml']['done'] === True && $todo['required']['header.png']['done'] === True && $todo['required']['images']['done'] === True)
+		if ( $todo['required']['data.xml']['done'] === True && $todo['required']['header.gif']['done'] === True && $todo['required']['images']['done'] === True)
 		{
 			$contentText = '<h2>Ready?</h2>
 <p>Almost done! Just complete this final step and you\'ll be done with all of this. You definitely deserve a nice drink after going through all of this.</p>';
@@ -264,9 +264,9 @@ Don\'t forget that you can always rename the data.xml file back to _data.xml to 
 			}
 		}
 
-		if( file_exists('images/header.png') )
+		if( file_exists('images/header.gif') )
 		{
-			$todo['required']['header.png']['done'] = True;
+			$todo['required']['header.gif']['done'] = True;
 		}
 
 		if( $files = glob("images/*.png") )
@@ -276,7 +276,7 @@ Don\'t forget that you can always rename the data.xml file back to _data.xml to 
 				$found = 0;
 				foreach( $files as $file )
 				{
-					if( substr($file, -10) != "header.png" && substr($file, -8) != "logo.png" && substr($file, -8) != "icon.png" )
+					if( substr($file, -10) != "header.gif" && substr($file, -8) != "logo.png" && substr($file, -8) != "icon.png" )
 					{
 						$found++;	
 					}
@@ -336,7 +336,7 @@ Don\'t forget that you can always rename the data.xml file back to _data.xml to 
 		{
 			$contentText = '<h2>Ready!</h2>
 <p>You are done. Refresh this page to see the result.</p>';
-		} else if ( $todo['required']['data.xml']['done'] === True && $todo['required']['header.png']['done'] === True && $todo['required']['images']['done'] === True)
+		} else if ( $todo['required']['data.xml']['done'] === True && $todo['required']['header.gif']['done'] === True && $todo['required']['images']['done'] === True)
 		{
 			$contentText = '<h2>Ready?</h2>
 <p>When done, <strong>rename the _data.xml file to data.xml (without the underscore)</strong> to finish the page creation. After you\'ve renamed the file, refresh this page.</p>';

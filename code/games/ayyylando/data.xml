@@ -2,118 +2,46 @@
 
 <game>
 	<title>Ayyylando</title>
-	<release-date>1 May, 2012</release-date>
-	<website>http://www.gamesite.com/</website>
-	<press-can-request-copy>TRUE</press-can-request-copy>
+	<release-date>2023 (tbd)</release-date>
+	<website>https://radpepperhat.github.io/presskit/ayyylando</website>
 
 	<platforms>
-		<platform>
-			<name>PC / Mac</name>
-			<link>http://www.gamesite.com/</link>
-		</platform>
 		<platform>
 			<name>Steam</name>
 			<link>http://www.steampowered.com/</link>
 		</platform>
-		<platform>
-			<name>Apple App Store</name>
-			<link>http://www.itunes.com/</link>
-		</platform>
 	</platforms>
-	
-	<prices>
-		<price>
-			<currency>USD</currency>
-			<value>$1.99</value>
-		</price>
-		<price>
-			<currency>EUR</currency>
-			<value>€1.59</value>
-		</price>
-		<price>
-			<currency>CAD</currency>
-			<value>$1.99</value>
-		</price>				
-		<price>
-			<currency>GBP</currency>
-			<value>£1.29</value>
-		</price>
-	</prices>
 
 	<description>
-	Hello. This is a short compilation of facts about the game. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Ayyylando is a chill building strategy game where you build happy little cities in the sky. Explore a variety of colorful islands, evolve your buildings to help you grow, and when solid ground is no longer cool enough for you - expand onto the cliff sides.
+	If you're looking for a simple, all building, no resource management style of experience, Ayyylando is here for you. Intuitive gameplay will have you creating sprawling island cities in no time, leaving you free to enjoy the relaxing atmosphere... or puzzle out how to get the sweetest combos; whatever floats your airboat.
+	As an Islanders-like, Ayyylando floats in with a twist or two: 
+	⦁	Making buildings happy is an important part of gameplay - depending on the game mode, perhaps THE most important thing
+	⦁	Here in the skies, building space is scarce - which is why cliffsides are FREE REAL ESTATE
+	⦁	No rooftop is safe either.
+	⦁	Okay - perhaps the round ones. We haven't figured out how to build on those yet - we're working on it, okay?
 	</description>
 	
 	<history>
-	Since we're an indie developer, we want a history to our game. This paragraph will explain this history in short. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Ayyylando started out with an idea of "what if Islanders, but socialism" - meaning, rather than focusing on maximizing a single building - you'd need to balance your play to make as many buildings happy as possible. Add to that an ardent love of floating islands in vibrant colors and entirely too much thinking about limited building space and tetris - and you've got Ayyylando - a simple, whimsical game to enjoy for an evening here and there.
+	Initially a solo-dev project by Lisza, the team has since grown. Ayyylando will be the first release by RadPepperHat. 
 	</history>
 
 	<features>
-		<feature>Includes something really interesting about the game which players will love.</feature>
-		<feature>This feature line is about the 8-bit pixels that are no doubt featuring in this game.</feature>
-		<feature>Since it is unlikely that the audio isn't fucking amazing, say something about the audio, maybe?</feature>
-		<feature>Make sure to stress that everything about this game is absolutely fabulous.</feature>
-		<feature>Something to wrap up this 5-point feature list with a nice ring to it.</feature>
+		<feature>Build happy little cities in the sky</feature>
+		<feature>Explore a variety of colorful skyborne islands</feature>
+		<feature>Enjoy relaxing gameplay at your own pace</feature>
+		<feature>Flex your city-planning prowess as you beat your highscore</feature>
+		<feature>Commit worst architectural crimes known to man</feature>
 	</features>
 	
 	<trailers>
 		<trailer>
 			<name>Trailer</name>
 			<youtube>G1IbRujko-A</youtube>
-			<vimeo>110527266</vimeo>
-		</trailer>
-		<trailer>
-			<name>Gameplay Video</name>
-			<youtube>G1IbRujko-A</youtube>
-			<vimeo>110527266</vimeo>
 		</trailer>
 	</trailers>
 	
-	<awards>
-		<award>
-			<description>Winner in this highly relevant contest.</description>
-			<info>Award Location, 20 October, 1989</info>
-		</award>
-		<award>
-			<description>Nomination for this prestigious award.</description>
-			<info>Award Ceremony, 4 December, 1991</info>
-		</award>
-		<award>
-			<description>Winner in this highly relevant contest.</description>
-			<info>Award Location, 20 October, 1989</info>
-		</award>
-		<award>
-			<description>Nomination for this prestigious award.</description>
-			<info>Award Ceremony, 4 December, 1991</info>
-		</award>
-	</awards>
-	
-	<quotes>
-		<quote>
-			<description>This is a rather insignificant quote by a highly important person.</description>
-			<name>Person Name</name>
-			<website>Website</website>
-			<link>http://example.org</link>
-		</quote>
-		<quote>
-			<description>An extremely positive quote from a rather insignificant person. Also great.</description>
-			<name>Some Guy</name>
-			<website>This Page Is Visited By 12 Visitors A Month</website>
-			<link>http://example.org</link>
-		</quote>
-		<quote>
-			<description>I pretend to love this game even though I do not actually understand it.</description>
-			<name>Pretentious Bastard</name>
-			<website>Artsy Page</website>
-			<link>http://example.org</link>
-		</quote>
-		<quote>
-			<description>HOLY SHIT SO AMAZING</description>
-			<name>Caps Guy</name>
-			<website>Angry Review</website>
-			<link>http://example.org</link>
-		</quote>
-	</quotes>
 	
 	<additionals>
 		<additional>
@@ -130,26 +58,20 @@
 	
 	<credits>
 		<credit>
-			<person>Rami Ismail</person>
-			<role>Business &amp; Development, Vlambeer</role>
+			<person>Martyna "Lisza" Wasiluk</person>
+			<role>Creative director</role>
 		</credit>
 		<credit>
-			<person>Jan Willem Nijman</person>
+			<person>Bartosz "Dworzo" Dworzyński</person>
 			<role>Game Designer, Vlambeer</role>
 		</credit>
 		<credit>
-			<person>John Doe</person>
-			<role>Artist, Freelancer</role>
+			<person>Nidor</person>
+			<role>Programming</role>
 		</credit>
 		<credit>
-			<person>Oliver Twist</person>
-			<website>http://www.olivertwist.com</website>
-			<role>Artist, Freelancer</role>
-		</credit>
-		<credit>
-			<person>Jane Doette</person>
-			<website>http://www.olivertwist.com</website>
-			<role>Music, Freelancer</role>
+			<person>Kornel Kwarciak</person>
+			<role>Music</role>
 		</credit>
 	</credits>
 </game>
