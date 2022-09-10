@@ -24,8 +24,8 @@
 	⦁	Here in the skies, building space is scarce - which is why cliffsides are FREE REAL ESTATE
 	\r\n
 	⦁	No rooftop is safe either.
-	\r\n
-	⦁	Okay - perhaps the round ones. We haven't figured out how to build on those yet - we're working on it, okay?
+	<feature>
+	⦁	Okay - perhaps the round ones. We haven't figured out how to build on those yet - we're working on it, okay?</feature>
 	</description>
 	
 	<history>
@@ -48,6 +48,8 @@
 			<youtube>G1IbRujko-A</youtube>
 		</trailer>
 	</trailers>
+
+	<monetization-permission>monetize</monetization-permission>
 	
 	<credits>
 		<credit>
