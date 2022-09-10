@@ -14,16 +14,23 @@
 
 	<description>
 	Ayyylando is a chill building strategy game where you build happy little cities in the sky. Explore a variety of colorful islands, evolve your buildings to help you grow, and when solid ground is no longer cool enough for you - expand onto the cliff sides.
+	\n
 	If you're looking for a simple, all building, no resource management style of experience, Ayyylando is here for you. Intuitive gameplay will have you creating sprawling island cities in no time, leaving you free to enjoy the relaxing atmosphere... or puzzle out how to get the sweetest combos; whatever floats your airboat.
-	As an Islanders-like, Ayyylando floats in with a twist or two: 
+	\n
+	As an Islanders-like, Ayyylando floats in with a twist or two:
+	\n
 	⦁	Making buildings happy is an important part of gameplay - depending on the game mode, perhaps THE most important thing
+	\n
 	⦁	Here in the skies, building space is scarce - which is why cliffsides are FREE REAL ESTATE
+	\n
 	⦁	No rooftop is safe either.
+	\n
 	⦁	Okay - perhaps the round ones. We haven't figured out how to build on those yet - we're working on it, okay?
 	</description>
 	
 	<history>
 	Ayyylando started out with an idea of "what if Islanders, but socialism" - meaning, rather than focusing on maximizing a single building - you'd need to balance your play to make as many buildings happy as possible. Add to that an ardent love of floating islands in vibrant colors and entirely too much thinking about limited building space and tetris - and you've got Ayyylando - a simple, whimsical game to enjoy for an evening here and there.
+	\n
 	Initially a solo-dev project by Lisza, the team has since grown. Ayyylando will be the first release by RadPepperHat. 
 	</history>
 
@@ -59,11 +66,11 @@
 	<credits>
 		<credit>
 			<person>Martyna "Lisza" Wasiluk</person>
-			<role>Creative director</role>
+			<role>Creative direction</role>
 		</credit>
 		<credit>
 			<person>Bartosz "Dworzo" Dworzyński</person>
-			<role>Game Designer, Vlambeer</role>
+			<role>Game Design, programming</role>
 		</credit>
 		<credit>
 			<person>Nidor</person>
