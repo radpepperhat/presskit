@@ -18,9 +18,17 @@ $todo = array(
 			"text" => "Upload appropriate *.png files to the images directory. No further action is required to make the images show up.",
 			"done" => False
 		)
+		"gifs" => array(
+			"text" => "Upload appropriate *.png files to the images directory. No further action is required to make the images show up.",
+			"done" => False
+		)
 	),
 	"optional" => array(
 		"images.zip" => array(
+			"text" => "(Optional) Archive all the images and upload the file as images.zip. No further action is required to make the download show up.",
+			"done" => False
+		),
+		"gifs.zip" => array(
 			"text" => "(Optional) Archive all the images and upload the file as images.zip. No further action is required to make the download show up.",
 			"done" => False
 		),
@@ -157,10 +165,33 @@ if( $state == 'upgrade' )
 				}
 			}	
 		}
+		if( $files = glob("gifs/*.gif") )
+		{
+			if( count($files) > 0 )
+			{
+				$found = 0;
+				foreach( $files as $file )
+				{
+					if( substr($file, -10) != "header.png" && substr($file, -8) != "logo.png" && substr($file, -8) != "icon.png" )
+					{
+						$found++;	
+					}
+				}
+				
+				if( $found > 0 )
+				{
+					$todo['required']['gifs']['done'] = True;
+				}
+			}	
+		}
 
 		if( file_exists('images/images.zip') )
 		{
 			$todo['optional']['images.zip']['done'] = True;
+		}
+		if( file_exists('gifs/gifs.zip') )
+		{
+			$todo['optional']['gifs.zip']['done'] = True;
 		}
 
 		if( file_exists('images/logo.png') || file_exists('images/icon.png') )
@@ -207,7 +238,7 @@ if( $state == 'upgrade' )
 			}
 		}
 
-		if ( $todo['required']['data.xml']['done'] === True && $todo['required']['header.png']['done'] === True && $todo['required']['images']['done'] === True)
+		if ( $todo['required']['data.xml']['done'] === True && $todo['required']['header.png']['done'] === True && $todo['required']['images']['done'] === True && $todo['required']['gifs']['done'] === True)
 		{
 			$contentText = '<h2>Ready?</h2>
 <p>Almost done! Just complete this final step and you\'ll be done with all of this. You definitely deserve a nice drink after going through all of this.</p>';
@@ -288,10 +319,33 @@ Don\'t forget that you can always rename the data.xml file back to _data.xml to 
 				}
 			}	
 		}
+		if( $files = glob("gifs/*.gif") )
+		{
+			if( count($files) > 0 )
+			{
+				$found = 0;
+				foreach( $files as $file )
+				{
+					if( substr($file, -10) != "header.png" && substr($file, -8) != "logo.png" && substr($file, -8) != "icon.png" )
+					{
+						$found++;	
+					}
+				}
+				
+				if( $found > 0 )
+				{
+					$todo['required']['gifs']['done'] = True;
+				}
+			}	
+		}
 
 		if( file_exists('images/images.zip') )
 		{
 			$todo['optional']['images.zip']['done'] = True;
+		}
+		if( file_exists('gifs/gifs.zip') )
+		{
+			$todo['optional']['gif.zip']['done'] = True;
 		}
 
 		if( file_exists('images/logo.png') || file_exists('images/icon.png') )

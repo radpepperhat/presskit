@@ -232,6 +232,7 @@ echo '					<li><a href="#factsheet">'. tl('Factsheet') .'</a></li>
 						<li><a href="#projects">'. tl('Projects') .'</a></li>
 						<li><a href="#trailers">'. tl('Videos') .'</a></li>
 						<li><a href="#images">'. tl('Images') .'</a></li>
+						<li><a href="#gifs">'. tl('Gifs') .'</a></li>
 						<li><a href="#logo">'. tl('Logo & Icon') .'</a></li>';
 						if( count($awards) > 0 ) echo'<li><a href="#awards">'. tl('Awards & Recognition') .'</a></li>';
 						if( count($quotes) > 0 ) echo '<li><a href="#quotes">'. tl('Selected Articles') .'</a></li>';
@@ -291,7 +292,7 @@ echo '							</p>
 
 if ($handle = opendir('.')) {
 	while (false !== ($entry = readdir($handle))) {
-		if ($entry != "." && $entry != ".." && $entry != "lang" && substr($entry,0,1) != "_" && strpos($entry, ".") === FALSE && substr($entry,-4) != ".log" && substr($entry,0,6) != "images" && substr($entry,0,8) != "trailers" && substr($entry,0,9) != "error_log") {
+		if ($entry != "." && $entry != ".." && $entry != "lang" && substr($entry,0,1) != "_" && strpos($entry, ".") === FALSE && substr($entry,-4) != ".log" && substr($entry,0,6) != "images" && substr($entry,0,6) != "gifs" && substr($entry,0,8) != "trailers" && substr($entry,0,9) != "error_log") {
 			echo '<a href="'.$entry . str_replace('?', '&', $languageQuery).'">'.ucwords(str_replace("_", " ", $entry)).'</a><br />';
 		}
 	}
@@ -339,7 +340,7 @@ echo '							<h2 id="projects">'. tl('Projects') .'</h2>
 
 if ($handle = opendir($games_location)) {
 	while (false !== ($entry = readdir($handle))) {
-		if ($entry != "." && $entry != ".." && $entry != "lang" && substr($entry,0,1) != "_" && strpos($entry, ".") === FALSE && substr($entry,-4) != ".log" && substr($entry,0,6) != "images" && substr($entry,0,8) != "trailers" && substr($entry,0,9) != "error_log") {
+		if ($entry != "." && $entry != ".." && $entry != "lang" && substr($entry,0,1) != "_" && strpos($entry, ".") === FALSE && substr($entry,-4) != ".log" && substr($entry,0,6) != "images" && substr($entry,0,8) != "gifs" && substr($entry,0,8) != "trailers" && substr($entry,0,9) != "error_log") {
 			echo '<li><a href="'.$entry. str_replace('?', '&', $languageQuery).'">'.ucwords(str_replace("_", " ", $entry)).'</a></li>';
 		}
 	}
@@ -424,6 +425,7 @@ else
 echo '					<hr>
 
 					<h2 id="images">'. tl('Images') .'</h2>';
+					
 
 if( file_exists("images/images.zip") )
 {
@@ -456,8 +458,44 @@ if ($handle = opendir('images'))
 echo '</div>';
 
 closedir($handle);
+echo '					<hr>
 
-echo '					<p class="images-text">'. tlHtml('There are far more images available for %s, but these are the ones we felt would be most useful to you. If you have specific requests, please do <a href="#contact">contact us</a>!', COMPANY_TITLE) .'</p>
+					<h2 id="gifs">'. tl('Gifs') .'</h2>';
+					
+
+if( file_exists("gifs/gifs.zip") )
+{
+	$filesize = filesize("gifs/gifs.zip");
+	if( $filesize > 1024 && $filesize < 1048576 ) {
+		$filesize = (int)( $filesize / 1024 ).'KB';
+	}
+	if( $filesize > 1048576 ) {
+		$filesize = (int)(( $filesize / 1024 ) / 1024 ).'MB';
+	}
+
+	echo '<a href="gifs/gifs.zip"><div class="uk-alert">'. tl('download all screenshots & photos as .zip (%s)', $filesize) .'</div></a>';
+}
+
+echo '<div class="uk-grid gifs">';
+if ($handle = opendir('gifs'))
+{
+	/* This is the correct way to loop over the directory. */
+	while (false !== ($entry = readdir($handle)))
+	{
+		if( substr($entry,-4) == ".png" || substr($entry,-4) == ".gif" )
+		{
+			if( substr($entry,0,4) != "logo" && substr($entry,0,4) != "icon" && substr($entry,0,6) != "header" )
+			{	
+				echo '<div class="uk-width-medium-1-2"><a href="gifs/'. $entry .'"><img src="gifs/'.$entry.'" alt="'.$entry.'" /></a></div>';
+			}
+		}
+	}
+}
+echo '</div>';
+
+closedir($handle);
+
+echo '					<p class="images-text">'. tlHtml('', COMPANY_TITLE) .'</p>
 
 					<hr>
 

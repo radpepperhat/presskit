@@ -50,7 +50,7 @@ if( !isset($xml) )
 </html>';
 		exit;		
 	}
-	else if( is_dir($games_location.$game) && $game != "lang" && $game != "images" && $game != "trailers" && $game != "_template" )
+	else if( is_dir($games_location.$game) && $game != "lang" && $game != "images" && $game != "lang" && $game != "gifs" && $game != "trailers" && $game != "_template" )
 	{
 		echo '<!DOCTYPE html>
 <html>
@@ -75,6 +75,9 @@ if( !isset($xml) )
 		// Todo: These steps will fail if safemode is turned on
 		if( !is_dir($games_location.$game.'/images') ) {
 			mkdir($games_location.$game.'/images');
+		}
+		if( !is_dir($games_location.$game.'/gifs') ) {
+			mkdir($games_location.$game.'/gifs');
 		}
 		if( !is_dir($games_location.$game.'/trailers') ) {
 			mkdir($games_location.$game.'/trailers');
@@ -344,6 +347,7 @@ echo '					<li><a href="#factsheet">'. tl('Factsheet') .'</a></li>
 						<li><a href="#projects">'. tl('Projects') .'</a></li>
 						<li><a href="#trailers">'. tl('Videos') .'</a></li>
 						<li><a href="#images">'. tl('Images') .'</a></li>
+						<li><a href="#gifs">'. tl('GIFs') .'</a></li>
 						<li><a href="#logo">'. tl('Logo & Icon') .'</a></li>';
 if( count($awards) > 0 ) echo('<li><a href="#awards">'. tl('Awards & Recognition') .'</a></li>');
 if( count($quotes) > 0 ) echo('<li><a href="#quotes">'. tl('Selected Articles') .'</a></li>');
@@ -573,6 +577,44 @@ if ($handle = opendir($games_location.$game.'/images'))
 			if( substr($entry,0,4) != "logo" && substr($entry,0,4) != "icon" && substr($entry,0,6) != "header" )
 			{	
 				echo '<div class="uk-width-medium-1-2"><a href="'. $games_location.$game .'/images/'. $entry .'"><img src="'. $games_location.$game .'/images/'.$entry.'" alt="'.$entry.'" /></a></div>';
+				$found++;
+			}
+		}
+	}
+}
+echo '</div>';
+
+closedir($handle);
+
+echo '					<hr>
+
+					<h2 id="gifs">'. tl('GIFs') .'</h2>';
+
+if( file_exists($games_location.$game."/gifs/gifs.zip") )
+{
+	$filesize = filesize($games_location.$game."/gifs/gifs.zip");
+	if( $filesize > 1024 && $filesize < 1048576 ) {
+		$filesize = (int)( $filesize / 1024 ).'KB';
+	}
+	if( $filesize > 1048576 ) {
+		$filesize = (int)(( $filesize / 1024 ) / 1024 ).'MB';
+	}
+
+	echo '<a href="'. $games_location.$game .'/gifs/gifs.zip"><div class="uk-alert">'. tl('download all GIFs as .zip (%s)', $filesize) .'</div></a>';
+}
+
+echo '<div class="uk-grid gifs">';
+if ($handle = opendir($games_location.$game.'/gifs'))
+{
+	$found = 0;
+	/* This is the correct way to loop over the directory. */
+	while (false !== ($entry = readdir($handle)))
+	{
+		if( substr($entry,-4) == ".png" || substr($entry,-4) == ".gif" )
+		{
+			if( substr($entry,0,4) != "logo" && substr($entry,0,4) != "icon" && substr($entry,0,6) != "header" )
+			{	
+				echo '<div class="uk-width-medium-1-2"><a href="'. $games_location.$game .'/gifs/'. $entry .'"><img src="'. $games_location.$game .'/gifs/'.$entry.'" alt="'.$entry.'" /></a></div>';
 				$found++;
 			}
 		}
@@ -818,7 +860,9 @@ for( $i = 0; $i < count($contacts); $i++ )
 
 echo '						</div>
 					</div>
-
+					<hr>
+					<strong>'. tl('Video policy'). '</strong><br/>
+					Text about video policy
 					<hr>
 
 					<p><a href="https://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="https://www.vlambeer.com/">Vlambeer</a>) - also thanks to <a href="https://dopresskit.com/#thanks">these fine folks</a></p>
