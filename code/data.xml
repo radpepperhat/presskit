@@ -9,16 +9,19 @@
 	<press-contact>radpepperhat@gmail.com</press-contact>
 
 	<description>
-	<p>Ho ho ho! You're actually not supposed to be here. Please, kindly return to <link>https://radpepperhat.github.io/presskit/ayyylando</link>, where I imagine you were going in the first place.</p>
-	<p>Look, we're indie devs, we're tired, and the presskit() tool works how it works - we're super grateful, and we're not gonna mess with it to remove this site. Maintaining one presskit is enough for a one-game studio, I'd say ; P</p>
-	<p>I promise we're gonna show off our swag and games when we've got more than one.</p>
+	<![CDATA[
+		<p>Ho ho ho! You're actually not supposed to be here. Please, kindly return to <link>https://radpepperhat.github.io/presskit/ayyylando</link>, where I imagine you were going in the first place.</p>
+		<p>Look, we're indie devs, we're tired, and the presskit() tool works how it works - we're super grateful, and we're not gonna mess with it to remove this site. Maintaining one presskit is enough for a one-game studio, I'd say ; P</p>
+		<p>I promise we're gonna show off our swag and games when we've got more than one.</p>
+	]]>
 	</description>
 		
 	<histories>
 		<history>
 			<header>Early history</header>
-			<text><p>Ayyylando started as a solodev project in Dec 2020, then some more people joined and RadPepperHat was born to have a convenient name for the team. Hats are dope. Rad, even. And who doesn't like a hat pepper? Exactly! Red peppers are okay I guess, but I do prefer the rad ones.</p>
-			<p>Look buddy, if you're still reading is then it is YOUR fault for hanging around, okay? Now, there are supposedly other kinds of peppers, but I've never seen that fact sufficiently confirmed...</p></text>
+			<text><![CDATA[<p>Ayyylando started as a solodev project in Dec 2020, then some more people joined and RadPepperHat was born to have a convenient name for the team. Hats are dope. Rad, even. And who doesn't like a hat pepper? Exactly! Red peppers are okay I guess, but I do prefer the rad ones.</p>
+			<p>Look buddy, if you're still reading is then it is YOUR fault for hanging around, okay? Now, there are supposedly other kinds of peppers, but I've never seen that fact sufficiently confirmed...</p>
+			]]></text>
 		</history>
 	</histories>
 		
