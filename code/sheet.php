@@ -793,7 +793,7 @@ echo '
 					
 					
 					<h2 id="about">'. tl('Video policy') .'</h2>
-					Text About Video policy
+					RadPepperHat allows for the contents of Ayyylando to be published through video broadcasting services for any commercial or non-commercial purposes. Monetization of videos created containing assets from Ayyylando is legally & explicitly allowed by RadPepperHat.
 					<hr>
 					<div class="uk-grid">
 						<div class="uk-width-medium-1-2">
