@@ -328,7 +328,7 @@ echo '<!DOCTYPE html>
 			<div class="uk-grid">
 				<div id="navigation" class="uk-width-medium-1-4">
 					<h1 class="nav-header">'. COMPANY_TITLE .'</h1>
-					<a class="nav-header" href="'. $languageQuery .'" target="_self">'. tl('press kit') .'</a></strong>
+					<a class="nav-header" href="'. "https://radpepperhat.github.io/presskit/ayyylando" .'" target="_self">'. tl('press kit') .'</a></strong>
 					<ul class="uk-nav uk-nav-side">';
 
 if (count(TranslateTool::getLanguages()) > 1) {
@@ -353,8 +353,8 @@ if( count($awards) > 0 ) echo('<li><a href="#awards">'. tl('Awards & Recognition
 if( count($quotes) > 0 ) echo('<li><a href="#quotes">'. tl('Selected Articles') .'</a></li>');
 if( $press_request == TRUE) { echo '<li><a href="#preview">'. tl('Request Press Copy') .'</a></li>'; }
 if( $monetize >= 1) { echo '<li><a href="#monetize">'. tl('Monetization Permission') .'</a></li>'; }
-echo '						<li><a href="#links">'. tl('Additional Links') .'</a></li>
-						<li><a href="#about">'. tl('About %s', COMPANY_TITLE) .'</a></li>
+echo '						
+						
 						<li><a href="#credits">'. tl('Team') .'</a></li>
 						<li><a href="#contact">'. tl('Contact') .'</a></li>
 					</ul>
@@ -370,7 +370,8 @@ echo '					<div class="uk-grid">
 							<h2 id="factsheet">'. tl('Factsheet'). '</h2>
 							<p>
 								<strong>'. tl('Developer:'). '</strong><br/>
-								<a href="../'. $languageQuery .'">'. COMPANY_TITLE .'</a><br/>
+								<a href="https://radpepperhat.github.io/presskit/ayyylando">'. COMPANY_TITLE .'</a><br/>
+								
 								'. tl('Based in %s', COMPANY_BASED) .'
 							</p>
 							<p>
@@ -600,7 +601,7 @@ if( file_exists($games_location.$game."/gifs/gifs.zip") )
 		$filesize = (int)(( $filesize / 1024 ) / 1024 ).'MB';
 	}
 
-	echo '<a href="'. $games_location.$game .'/images/images.zip"><div class="uk-alert">'. tl('download all GIFs as .zip (%s)', $filesize) .'</div></a>';
+	echo '<a href="'. $games_location.$game .'/gifs/gifs.zip"><div class="uk-alert">'. tl('download all GIFs as .zip (%s)', $filesize) .'</div></a>';
 }
 
 echo '<div class="uk-grid images">';
@@ -755,7 +756,7 @@ if( $monetize >= 1 )
 }
 
 
-echo '					<h2 id="links">'. tl('Additional Links'). '</h2>';
+
 		
 for( $i = 0; $i < count($additionals); $i++ )
 {
@@ -786,20 +787,11 @@ for( $i = 0; $i < count($additionals); $i++ )
 		
 
 echo '					
-<hr>
-					<h2 id="about">'. tl('About %s', COMPANY_TITLE) .'</h2>
-					<p>
-						<strong>'. tl('Boilerplate'). '</strong><br/>
-						'. COMPANY_DESCRIPTION .'
-					</p>
 
-					<p>
-						<strong>'. tl('More information'). '</strong><br/>
-						'. tlHtml('More information on %s, our logo & relevant media are available <a href="%s">here</a>.', COMPANY_TITLE, '../'. $languageQuery). '
-					</p>
+
 					
 					
-					<hr>
+					
 					<h2 id="about">'. tl('Video policy') .'</h2>
 					Text About Video policy
 					<hr>
@@ -869,9 +861,7 @@ for( $i = 0; $i < count($contacts); $i++ )
 
 echo '						</div>
 					</div>
-					<hr>
-					<strong>'. tl('Video policy'). '</strong><br/>
-					Text about video policy
+
 					<hr>
 
 					<p><a href="https://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="https://www.vlambeer.com/">Vlambeer</a>) - also thanks to <a href="https://dopresskit.com/#thanks">these fine folks</a></p>
