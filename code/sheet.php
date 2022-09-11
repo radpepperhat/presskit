@@ -600,10 +600,10 @@ if( file_exists($games_location.$game."/gifs/gifs.zip") )
 		$filesize = (int)(( $filesize / 1024 ) / 1024 ).'MB';
 	}
 
-	echo '<a href="'. $games_location.$game .'/gifs/gifs.zip"><div class="uk-alert">'. tl('download all GIFs as .zip (%s)', $filesize) .'</div></a>';
+	echo '<a href="'. $games_location.$game .'/images/images.zip"><div class="uk-alert">'. tl('download all GIFs as .zip (%s)', $filesize) .'</div></a>';
 }
 
-echo '<div class="uk-grid gifs">';
+echo '<div class="uk-grid images">';
 if ($handle = opendir($games_location.$game.'/gifs'))
 {
 	$found = 0;
@@ -623,6 +623,8 @@ if ($handle = opendir($games_location.$game.'/gifs'))
 echo '</div>';
 
 closedir($handle);
+
+
 
 if ($found == 0) {
 	echo '<p class="images-text">'. tlHtml('There are currently no screenshots available for %s. Check back later for more or <a href="#contact">contact us</a> for specific requests!', GAME_TITLE) .'</p>';
