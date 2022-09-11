@@ -781,8 +781,12 @@ for( $i = 0; $i < count($additionals); $i++ )
 </p>';
 }
 
-echo '					<hr>
 
+			
+		
+
+echo '					
+<hr>
 					<h2 id="about">'. tl('About %s', COMPANY_TITLE) .'</h2>
 					<p>
 						<strong>'. tl('Boilerplate'). '</strong><br/>
@@ -794,8 +798,11 @@ echo '					<hr>
 						'. tlHtml('More information on %s, our logo & relevant media are available <a href="%s">here</a>.', COMPANY_TITLE, '../'. $languageQuery). '
 					</p>
 					
+					
 					<hr>
-
+					<h2 id="about">'. tl('Video policy') .'</h2>
+					Text About Video policy
+					<hr>
 					<div class="uk-grid">
 						<div class="uk-width-medium-1-2">
 							<h2 id="credits">'. tl('%s Credits', GAME_TITLE) .'</h2>';
