@@ -11,7 +11,7 @@
 	<description>
 	<![CDATA[
 		<p>Ho ho ho! You're actually not supposed to be here. Please, kindly return to <link>https://radpepperhat.github.io/presskit/ayyylando</link>, where I imagine you were going in the first place.</p>
-		<p>Look, we're indie devs, we're tired, and the presskit() tool works how it works - we're super grateful, and we're not gonna mess with it to remove this site. Maintaining one presskit is enough for a one-game studio, I'd say ; P</p>
+		<p>Look, we're indie devs, we're tired, and the presskit() tool works how it works - we're super grateful for it, and we're not gonna mess with it to remove this site. And maintaining one presskit is enough for a one-game studio, I'd say ; P</p>
 		<p>I promise we're gonna show off our swag and games when we've got more than one.</p>
 	]]>
 	</description>
@@ -28,7 +28,7 @@
 	<trailers>
 		<trailer>
 			<name>That's our game!</name>
-			<youtube>yqWX86uT5jM</youtube>
+			<youtube>aPax64oGCsg</youtube>
 		</trailer>
 	</trailers>
 	
@@ -46,7 +46,7 @@
 	<credits>
 		<credit>
 			<person>Martyna "Lisza" Wasiluk</person>
-			<role>Creative director</role>
+			<role>Creative Director, All Things Do-er</role>
 		</credit>
 		<credit>
 			<person>Bartosz "Dworzo" Dworzyński</person>
@@ -61,7 +61,7 @@
 		</contact>
 		<contact>
 			<name>Twitter</name>
-			<link>http://twitter.com/MyCompanyName</link>
+			<link>https://twitter.com/LiszaUnleashed</link>
 		</contact>
 	</contacts>
 </game>

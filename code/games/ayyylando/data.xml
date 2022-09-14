@@ -8,7 +8,7 @@
 	<platforms>
 		<platform>
 			<name>Steam</name>
-			<link>http://www.steampowered.com/</link>
+			<link>https://store.steampowered.com/app/1980460/Ayyylando/</link>
 		</platform>
 	</platforms>
 
@@ -28,37 +28,38 @@
 	
 	<history>
 	<![CDATA[
-	<p>Ayyylando started out with an idea of "what if Islanders, but socialism" - meaning, rather than focusing on maximizing a single building - you'd need to balance your play to make as many buildings happy as possible. Add to that an ardent love of floating islands in vibrant colors and entirely too much thinking about limited building space and tetris - and you've got Ayyylando - a simple, whimsical game to enjoy for an evening here and there.</p>
+	<p>Ayyylando started out with an idea of "what if Islanders, but all buildings are important" - meaning, rather than focusing on maximizing a single building - you'd need to balance your play to make as many buildings happy as possible. Add to that an ardent love of floating islands in vibrant colors and entirely too much thinking about limited building space and tetris - and you've got Ayyylando - a simple, whimsical game to enjoy for an evening here and there.</p>
 	Initially a solo-dev project by Lisza, the team has since grown. Ayyylando will be the first release by RadPepperHat.
 	]]> 
 	</history>
 
 	<features>
 		<feature>Build happy little cities in the sky</feature>
+		<feature>The happier the buildings, the better your score</feature>
 		<feature>Explore a variety of colorful skyborne islands</feature>
 		<feature>Enjoy relaxing gameplay at your own pace</feature>
-		<feature>Flex your city-planning prowess as you beat your highscore</feature>
+		<feature>Or... flex your city-planning prowess as you beat your highscore</feature>
 		<feature>Commit worst architectural crimes known to man</feature>
 	</features>
 	
 	<trailers>
 		<trailer>
-			<name>Trailer</name>
-			<youtube>G1IbRujko-A</youtube>
+			<name>Announcement Trailer</name>
+			<youtube>aPax64oGCsg</youtube>
 		</trailer>
 	</trailers>
 	
 	<credits>
 		<credit>
 			<person>Martyna "Lisza" Wasiluk</person>
-			<role>Creative direction</role>
+			<role>Creative direction, development</role>
 		</credit>
 		<credit>
 			<person>Bartosz "Dworzo" Dworzyński</person>
-			<role>Game Design, programming</role>
+			<role>Game design, programming</role>
 		</credit>
 		<credit>
-			<person>Nidor</person>
+			<person>Emil Dębkowski</person>
 			<role>Programming</role>
 		</credit>
 		<credit>
